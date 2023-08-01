@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+int isBigger(int, int);
+int main (int argc, char* argv[])
+{
+int a, b, c;
+cout << "nhap 3 so a, b, c" << endl;
+cout << "a = ";
+cin >> a;
+cout << "b = ";
+cin >> b;
+cout << "c = ";
+cin >> c;
+int max = isBigger(a, b);
+if (max < c)
+max = c;
+cout << "So lon nhat trong 3 so la " << max << endl;
+system("pause");
+return 0;
+}
+int isBigger(int m, int n){
+if (m > n)
+return m;
+else
+return n;
+}
